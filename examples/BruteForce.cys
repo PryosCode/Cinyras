@@ -1,4 +1,3 @@
 void main(args: str[]) {
-    const password = "";
-    
+    const password: str = "psswd";
 }

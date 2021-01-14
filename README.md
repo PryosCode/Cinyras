@@ -6,7 +6,7 @@
 
 # Cinyras
 
-Cinyras is a small binary compiler with its own system level scripting language.
+Cinyras is a simple interpreter with its own low level scripting language written in Rust.
 
 _The compiler is not production ready and is mainly intended for testing algorithms or other small programs. It could easily break your code in a future update._
 

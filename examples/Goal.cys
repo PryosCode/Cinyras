@@ -8,7 +8,7 @@ void main(args: str[]) {
     let xyz: int = 100;
     xyz -= abc;
 
-    println("Is the answer %?", xyz);
+    println("Is the answer " + xyz + "?");
 
     let qwe: int = 99;
     while ijk != 0 {

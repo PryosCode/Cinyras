@@ -6,7 +6,7 @@
 
 # Cinyras
 
-Cinyras is a [interpreter](https://en.wikipedia.org/wiki/Interpreted_language) with its own simple [high level](https://en.wikipedia.org/wiki/High-level_programming_language) [scripting language](https://en.wikipedia.org/wiki/Scripting_language) written in [Rust](https://github.com/rust-lang/rust).
+Cinyras is an [interpreter](https://en.wikipedia.org/wiki/Interpreted_language) with its own simple [high level](https://en.wikipedia.org/wiki/High-level_programming_language) [scripting language](https://en.wikipedia.org/wiki/Scripting_language) written in [Rust](https://github.com/rust-lang/rust).
 
 _The interpreter is not production ready and is mainly intended for testing algorithms or other small programs. It could easily break your code in a future update._
 

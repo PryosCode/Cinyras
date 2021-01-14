@@ -3,13 +3,13 @@ name = "Cinyras"
 version = "0.0.1"
 authors = [ "PryosCode <info@pryoscode.net>" ]
 edition = "2018"
-description = "Cinyras is a simple interpreter with its own high level scripting language written in Rust."
+description = "Cinyras is a interpreter with its own simple high level scripting language written in Rust."
 documentation = "https://github.com/PryosCode/Cinyras/wiki"
 readme = "README.md"
 homepage = "https://pryoscode.net"
 repository = "https://github.com/PryosCode/Cinyras"
 license = "Apache License 2.0"
 license-file = "LICENSE"
-keywords = [ "" ]
+keywords = [ "interpreter", "scripting-language", "rust" ]
 
 [dependencies]

@@ -18,6 +18,25 @@ void main(args: str[]) {
     println();
 
     println((4 + 5) / 2 - 1 * 2);
+
+    const var: int = 123;
+    switch var {
+        1 {
+            println("One");
+        }
+        // RANGE IDENTIFIER UNCLEAR
+        2..5 {
+            println("Two --> Five");
+        }
+        ? {
+            println("Unknown");
+        }
+    }
+
+    // RANGE IDENTIFIER UNCLEAR + DEFINITION UNCLEAR
+    for let l: int in 0..99 {
+        println(l);
+    }
 }
 
 bool get_answer(x: int, y?: char) {

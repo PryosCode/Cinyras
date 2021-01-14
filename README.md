@@ -8,7 +8,7 @@
 
 Cinyras is a simple interpreter with its own low level scripting language written in Rust.
 
-_The compiler is not production ready and is mainly intended for testing algorithms or other small programs. It could easily break your code in a future update._
+_The interpreter is not production ready and is mainly intended for testing algorithms or other small programs. It could easily break your code in a future update._
 
 1. [Installation](#installation)
 2. [How to use](#how-to-use)

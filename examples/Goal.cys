@@ -10,7 +10,7 @@ void main(args: str[]) {
 
     println("Is the answer " + xyz + "?");
 
-    let qwe: int = 99;
+    let ijk: int = 99;
     while ijk != 0 {
         print(ijk);
         ijk--;

@@ -19,8 +19,8 @@ void main(args: str[]) {
 
     println((4 + 5) / 2 - 1 * 2);
 
-    const var: int = 123;
-    switch var {
+    const iii: int = 123;
+    switch iii {
         1 {
             println("One");
         }

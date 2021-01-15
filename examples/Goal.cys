@@ -1,5 +1,6 @@
-// int = -2^64 / 2 --> 2^64 / 2 - 1
-// str = char[]
+// int = i64 = -2^64 / 2 --> 2^64 / 2 - 1
+// float = f64
+// str = std::string
 
 void main(args: str[]) {
     println("Hello World!");
@@ -26,6 +27,9 @@ void main(args: str[]) {
         // RANGE IDENTIFIER UNCLEAR
         2..5 {
             println("Two --> Five");
+        }
+        6, 7, 8 {
+            println("Six or Seven or Eight");
         }
         ? {
             println("Unknown");

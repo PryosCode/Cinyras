@@ -5,11 +5,11 @@ void main(args: str[]) {
     println("Hello World!");
 
     const abc: int = 58;
-    let xyz: int = 100;
+    var xyz: int = 100;
     xyz -= abc;
     println("Is the answer " + xyz + "?");
 
-    let ijk: int = 99;
+    var ijk: int = 99;
     while ijk > 0 {
         print(ijk);
         ijk--;
@@ -33,7 +33,7 @@ void main(args: str[]) {
     }
 
     // RANGE IDENTIFIER UNCLEAR + DEFINITION UNCLEAR
-    for let l: int in 0..99 {
+    for var l: int in 0..99 {
         println(l);
     }
 }

@@ -1,4 +1,4 @@
-<a href="examples/Goal.cys"><img align="center" width="100%" alt="Logo" src="img/logo.png"></a>
+<a href="examples/Goal.cys"><img align="center" width="100%" alt="Logo" src="img/banner.png"></a>
 
 <p align="center">
     <a href="https://github.com/PryosCode/Cinyras/releases"><img src="https://img.shields.io/github/downloads/PryosCode/Cinyras/total?label=Downloads" alt="Downloads"></a>

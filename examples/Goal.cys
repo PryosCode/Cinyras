@@ -37,7 +37,7 @@ void main(args: str[]) {
     }
 
     // RANGE IDENTIFIER UNCLEAR + DEFINITION UNCLEAR
-    for var l: int in 0..99 {
+    for var i: int in 0..99 {
         println(l);
     }
 }

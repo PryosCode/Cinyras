@@ -43,10 +43,7 @@ void main(args: str[]) {
 }
 
 bool get_answer(x: int, y?: char) {
-    if x == 42 && (y != 'y' || y != 'x' || y != 'z') {
-        return true;
-    }
-    return false;
+    return x == 42 && (y != 'y' || y != 'x' || y != 'z');
 }
 
 void print(text?: any) {

@@ -1,3 +1,4 @@
 void main(args: str[]) {
-    println("Hello World!");
+    const text: str = "Hello World!";
+    println(text);
 }

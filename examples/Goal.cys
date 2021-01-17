@@ -1,16 +1,12 @@
-// int = i64 = -2^64 / 2 --> 2^64 / 2 - 1
-// float = f64
-// str = std::string
-
 void main(args: str[]) {
     println("Hello World!");
 
     const abc: int = 58;
-    var xyz: int = 100;
+    let xyz: int = 100;
     xyz -= abc;
     println("Is the answer " + xyz + "?");
 
-    var ijk: int = 99;
+    let ijk: int = 99;
     while ijk > 0 {
         print(ijk);
         ijk--;
@@ -37,19 +33,19 @@ void main(args: str[]) {
     }
 
     // RANGE IDENTIFIER UNCLEAR + DEFINITION UNCLEAR
-    for var i: int in 0..99 {
+    for i: int in 0..99 {
         println(l);
     }
 }
 
 bool get_answer(x: int, y?: char) {
-    return x == 42 && (y != 'y' || y != 'x' || y != 'z');
+    return x == 42 || (y != null && y == 'y');
 }
 
 void print(text?: any) {
-    // OUTPUT = text
+    // OUTPUT
 }
 
 void println(text?: any) {
-    // OUTPUT = text + ("\n" || + "\r\n")
+    // OUTPUT
 }

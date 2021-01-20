@@ -1,12 +1,12 @@
-void main(args: str[]) {
+void main(str[] args) {
     println("Hello World!");
 
-    const abc: int = 58;
-    let xyz: int = 100;
+    int abc = 58;
+    int xyz = 100;
     xyz -= abc;
     println("Is the answer " + xyz + "?");
 
-    let ijk: int = 99;
+    int ijk = 99;
     while ijk > 0 {
         print(ijk);
         ijk--;
@@ -14,13 +14,15 @@ void main(args: str[]) {
     println();
 
     println((4 + 5) / 2 - 1 * 2);
+    println(random());
+    println(random(100));
+    println(random(100, 200));
 
-    const iii: int = 123;
+    int iii = 123;
     switch iii {
         1 {
             println("One");
         }
-        // RANGE IDENTIFIER UNCLEAR
         2..5 {
             println("Two --> Five");
         }
@@ -32,20 +34,21 @@ void main(args: str[]) {
         }
     }
 
-    // RANGE IDENTIFIER UNCLEAR + DEFINITION UNCLEAR
-    for i: int in 0..99 {
+    for int i in 0..99 {
         println(l);
     }
 }
 
-bool get_answer(x: int, y?: char) {
+bool get_answer(int x, char y) {
     return x == 42 || (y != null && y == 'y');
 }
 
-void print(text?: any) {
-    // OUTPUT
-}
 
-void println(text?: any) {
-    // OUTPUT
-}
+
+void print();
+void println();
+void print(str text);
+void println(str text);
+int random();
+int random(int max);
+int random(int min, int max);

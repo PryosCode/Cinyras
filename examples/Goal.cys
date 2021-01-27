@@ -52,3 +52,5 @@ void println(str text);
 int random();
 int random(int max);
 int random(int min, int max);
+str file_read(str path);
+bool file_write(str path, str content);

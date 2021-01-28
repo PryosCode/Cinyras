@@ -56,7 +56,7 @@ cinyras https://github.com/PryosCode/Cinyras/raw/master/examples/HelloWorld.cys
 
 ### Output
 ```
-Hello World
+Hello World!
 ```
 
 ## How to use

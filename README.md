@@ -25,6 +25,33 @@ _Coming Soon_
 
 _Coming Soon_
 
+## Comparison
+
+### Cinyras
+```
+void main(str[] args) {
+    println("Hello World!");
+}
+```
+
+### C++
+```cpp
+#include <iostream>
+int main() {
+    std::cout << "Hello World!" << std::endl;
+    return 0;
+}
+```
+
+### Java
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+```
+
 ## Dependencies
 
 _Coming Soon_

@@ -22,7 +22,7 @@ _The interpreter is not production ready and is mainly intended for testing algo
 
 _Doesn't actually work yet._
 
-### Arch
+### Arch Linux
 ```bash
 pacman -S --needed git base-devel
 git clone https://github.com/PryosCode/Cinyras.git

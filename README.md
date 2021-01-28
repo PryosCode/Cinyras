@@ -35,7 +35,7 @@ makepkg -si
 cd %localappdata%
 mkdir Cinyras
 cd Cinyras
-curl https://github.com/PryosCode/Cinyras/releases/download/v0.0.1/cinyras.exe
+curl -o https://github.com/PryosCode/Cinyras/releases/download/v0.0.1/cinyras.exe
 setx path "%path%;%localappdata%\Cinyras\"
 ```
 

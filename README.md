@@ -20,7 +20,21 @@ _The interpreter is not production ready and is mainly intended for testing algo
 
 ## Installation
 
-_Coming Soon_
+_Doesn't actually work yet._
+
+### Arch
+```bash
+pacman -S --needed git base-devel
+git clone https://github.com/PryosCode/Cinyras.git
+cd Cinyras
+makepkg -si
+```
+
+### Windows
+```batch
+curl https://github.com/PryosCode/Cinyras/releases/download/v0.0.1/Setup.exe
+Setup.exe
+```
 
 ## How to use
 

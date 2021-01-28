@@ -14,8 +14,9 @@ _The interpreter is not production ready and is mainly intended for testing algo
 
 1. [Installation](#installation)
 2. [How to use](#how-to-use)
-3. [Dependencies](#dependencies)
-4. [License](#license)
+3. [Comparison](#comparison)
+4. [Dependencies](#dependencies)
+5. [License](#license)
 
 ## Installation
 

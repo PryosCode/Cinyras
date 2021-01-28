@@ -18,13 +18,13 @@ _The interpreter is not production ready and is mainly intended for testing algo
 2. [Test Installation](#test-installation)
    1. [Input](#input)
    2. [Output](#output)
-2. [How to use](#how-to-use)
-3. [Comparison](#comparison)
+3. [How to use](#how-to-use)
+4. [Comparison](#comparison)
     1. [Cinyras](#cinyras-1)
     2. [C++](#c)
     3. [Java](#java)
-4. [Dependencies](#dependencies)
-5. [License](#license)
+5. [Dependencies](#dependencies)
+6. [License](#license)
 
 ## Installation
 

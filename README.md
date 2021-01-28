@@ -15,6 +15,9 @@ _The interpreter is not production ready and is mainly intended for testing algo
 1. [Installation](#installation)
     1. [Arch Linux](#arch-linux)
     2. [Windows](#windows)
+2. [Test Installation](#test-installation)
+   1. [Input](#input)
+   2. [Output](#output)
 2. [How to use](#how-to-use)
 3. [Comparison](#comparison)
     1. [Cinyras](#cinyras-1)
@@ -40,13 +43,27 @@ makepkg -si
 cd %localappdata%
 mkdir Cinyras
 cd Cinyras
-curl -o https://github.com/PryosCode/Cinyras/releases/download/v0.0.1/cinyras.exe
+curl -o cinyras.exe https://github.com/PryosCode/Cinyras/releases/download/v0.0.1/Cinyras.exe
 setx path "%path%;%localappdata%\Cinyras\"
+```
+
+## Test Installation
+
+### Input
+```bash
+cinyras https://github.com/PryosCode/Cinyras/raw/master/examples/HelloWorld.cys
+```
+
+### Output
+```
+Hello World
 ```
 
 ## How to use
 
-_Coming Soon_
+```
+cinyras <file> [args]
+```
 
 ## Comparison
 

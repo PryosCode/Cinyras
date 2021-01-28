@@ -13,8 +13,13 @@ Cinyras is a [high level](https://en.wikipedia.org/wiki/High-level_programming_l
 _The interpreter is not production ready and is mainly intended for testing algorithms or other small programs. It could easily break your code in a future update._
 
 1. [Installation](#installation)
+    1. [Arch Linux](#arch-linux)
+    2. [Windows](#windows)
 2. [How to use](#how-to-use)
 3. [Comparison](#comparison)
+    1. [Cinyras](#cinyras-1)
+    2. [C++](#c)
+    3. [Java](#java)
 4. [Dependencies](#dependencies)
 5. [License](#license)
 

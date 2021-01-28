@@ -44,7 +44,7 @@ cd %localappdata%
 mkdir Cinyras
 cd Cinyras
 curl -o cinyras.exe https://github.com/PryosCode/Cinyras/releases/download/v0.0.1/Cinyras.exe
-setx path "%path%;%localappdata%\Cinyras\"
+setx path "%path%;%localappdata%\\Cinyras\\"
 ```
 
 ## Test Installation

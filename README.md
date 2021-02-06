@@ -63,7 +63,7 @@ Hello World!
 
 ```
 USAGE:
-    cinyras [FLAGS] <FILE>
+    cinyras [FLAGS] <FILE> [ARGS]...
 
 FLAGS:
     -h, --help       Prints help information
@@ -71,7 +71,8 @@ FLAGS:
     -v, --verbose    Activates verbose mode
 
 ARGS:
-    <FILE>    Sets the input file to use
+    <FILE>       Sets the input file to use
+    <ARGS>...    Arguments for the script
 ```
 
 ## Comparison

@@ -12,13 +12,16 @@ fn main() {
         .arg(Arg::with_name("FILE")
             .help("Sets the input file to use")
             .required(true))
+        .arg(Arg::with_name("ARGS")
+            .help("Arguments for the script")
+            .min_values(0))
         .arg(Arg::with_name("verbose")
             .short("v")
             .long("verbose")
             .help("Activates verbose mode"))
         .get_matches();
 
-    let file = matches.value_of("INPUT").unwrap();
+    let file = matches.value_of("FILE").unwrap();
     let string = std::fs::read_to_string(file).expect("Error");
     println!("{}", string);
 }

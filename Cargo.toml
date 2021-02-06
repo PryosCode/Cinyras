@@ -1,5 +1,5 @@
 [package]
-name = "Cinyras"
+name = "cinyras"
 version = "0.0.1"
 authors = [ "PryosCode <info@pryoscode.net>" ]
 edition = "2018"
@@ -13,3 +13,4 @@ license-file = "LICENSE"
 keywords = [ "interpreter", "scripting-language", "rust" ]
 
 [dependencies]
+clap = "2.33"

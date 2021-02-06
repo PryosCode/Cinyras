@@ -8,7 +8,6 @@ documentation = "https://github.com/PryosCode/Cinyras/wiki"
 readme = "README.md"
 homepage = "https://github.com/PryosCode/Cinyras"
 repository = "https://github.com/PryosCode/Cinyras"
-license = "Apache License 2.0"
 license-file = "LICENSE"
 keywords = [ "interpreter", "scripting-language", "rust" ]
 

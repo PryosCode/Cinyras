@@ -14,7 +14,7 @@ fn main() {
             .required(true))
         .arg(Arg::with_name("ARGS")
             .help("Arguments for the script")
-            .min_values(0))
+            .multiple(true))
         .arg(Arg::with_name("verbose")
             .short("v")
             .long("verbose")
@@ -29,4 +29,9 @@ fn main() {
         content = std::fs::read_to_string(file).unwrap();
     }
     println!("{}", content);
+    if matches.is_present("ARGS") {
+        for arg in matches.values_of("ARGS").unwrap().collect::<Vec<_>>() {
+            print!("{} ", arg)
+        }
+    }
 }

@@ -87,7 +87,7 @@ void main(str[] args) {
 ### C++
 ```cpp
 #include <iostream>
-int main() {
+int main(int argc, char *argv[]) {
     std::cout << "Hello World!" << std::endl;
     return 0;
 }

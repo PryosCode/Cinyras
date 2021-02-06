@@ -9,9 +9,13 @@ fn main() {
         .version("0.0.1")
         .author("PryosCode <info@pryoscode.net>")
         .about("Cinyras is a high level general purpose interpreted scripting language with its own interpreter written in Rust.")
-        .arg(Arg::with_name("INPUT")
+        .arg(Arg::with_name("FILE")
             .help("Sets the input file to use")
             .required(true))
+        .arg(Arg::with_name("verbose")
+            .short("v")
+            .long("verbose")
+            .help("Activates verbose mode"))
         .get_matches();
 
     let file = matches.value_of("INPUT").unwrap();

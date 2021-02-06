@@ -62,7 +62,7 @@ Hello World!
 ## How to use
 
 ```
-cinyras <file> [args]
+cinyras [FLAGS] <FILE>
 ```
 
 ## Comparison

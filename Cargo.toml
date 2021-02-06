@@ -12,4 +12,4 @@ license-file = "LICENSE"
 keywords = [ "interpreter", "scripting-language", "rust" ]
 
 [dependencies]
-clap = "2.33"
+clap = "2.33.3"

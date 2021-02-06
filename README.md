@@ -94,7 +94,7 @@ public class Main {
 
 ## Dependencies
 
-_Coming Soon_
+- [clap](https://crates.io/crates/clap/2.33.3)
 
 ## License
 

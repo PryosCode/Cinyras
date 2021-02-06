@@ -62,7 +62,16 @@ Hello World!
 ## How to use
 
 ```
-cinyras [FLAGS] <FILE>
+USAGE:
+    cinyras [FLAGS] <FILE>
+
+FLAGS:
+    -h, --help       Prints help information
+    -V, --version    Prints version information
+    -v, --verbose    Activates verbose mode
+
+ARGS:
+    <FILE>    Sets the input file to use
 ```
 
 ## Comparison

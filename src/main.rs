@@ -26,7 +26,7 @@ fn main() {
     if file.to_lowercase().starts_with("http://") || file.to_lowercase().starts_with("https://") {
         content = reqwest::blocking::get(file).unwrap().text().unwrap();
     } else {
-        content = std::fs::read_to_string(file).expect("Error");
+        content = std::fs::read_to_string(file).unwrap();
     }
     println!("{}", content);
 }

@@ -61,7 +61,7 @@ Hello World!
 
 ## How to use
 
-```bash
+```
 USAGE:
     cinyras [FLAGS] <FILE> [ARGS]...
 

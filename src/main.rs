@@ -22,6 +22,11 @@ fn main() {
         .get_matches();
 
     let file = matches.value_of("FILE").unwrap();
-    let string = std::fs::read_to_string(file).expect("Error");
-    println!("{}", string);
+    let content;
+    if file.to_lowercase().starts_with("http://") || file.to_lowercase().starts_with("https://") {
+        content = reqwest::blocking::get(file).unwrap().text().unwrap();
+    } else {
+        content = std::fs::read_to_string(file).expect("Error");
+    }
+    println!("{}", content);
 }

@@ -13,12 +13,12 @@ fn main() {
             .help("Sets the input file to use")
             .required(true))
         .arg(Arg::with_name("ARGS")
-            .help("Arguments for the script")
+            .help("Arguments passed to script")
             .multiple(true))
         .arg(Arg::with_name("verbose")
             .short("v")
             .long("verbose")
-            .help("Activates verbose mode"))
+            .help("Use verbose output"))
         .get_matches();
 
     let file = matches.value_of("FILE").unwrap();
@@ -29,6 +29,7 @@ fn main() {
         content = std::fs::read_to_string(file).unwrap();
     }
     println!("{}", content);
+
     if matches.is_present("ARGS") {
         for arg in matches.values_of("ARGS").unwrap().collect::<Vec<_>>() {
             print!("{} ", arg)

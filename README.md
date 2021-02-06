@@ -68,11 +68,11 @@ USAGE:
 FLAGS:
     -h, --help       Prints help information
     -V, --version    Prints version information
-    -v, --verbose    Activates verbose mode
+    -v, --verbose    Use verbose output
 
 ARGS:
     <FILE>       Sets the input file to use
-    <ARGS>...    Arguments for the script
+    <ARGS>...    Arguments passed to script
 ```
 
 ## Comparison

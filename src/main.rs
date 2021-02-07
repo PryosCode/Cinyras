@@ -24,7 +24,11 @@ fn main() {
     let file = matches.value_of("FILE").unwrap();
     let content;
     if file.to_lowercase().starts_with("http:") || file.to_lowercase().starts_with("https:") {
-        content = reqwest::blocking::get(file).unwrap().text().unwrap();
+        let request = reqwest::blocking::get(file).unwrap();
+        if matches.is_present("verbose") {
+            println!("{}", request.status());
+        }
+        content = request.text().unwrap();
     } else {
         content = std::fs::read_to_string(file).unwrap();
     }

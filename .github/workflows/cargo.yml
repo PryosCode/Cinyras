@@ -44,7 +44,7 @@ jobs:
     - name: Cargo
       run: |
         cargo build --release
-        mv target/release/cinyras cinyras.exe
+        mv target/release/cinyras.exe cinyras.exe
     - name: Release
       uses: softprops/action-gh-release@v1
       with:

@@ -46,7 +46,7 @@ jobs:
         toolchain: stable
     - name: Cargo
       run: |
-        echo CARGO_VERSION=$(cat Cargo.toml | grep -m 1 'version =' | cut -d "\"" -f 2) >> $GITHUB_ENV
+        echo CARGO_VERSION=$(cat Cargo.toml | grep -m 1 'version =' | cut -d '"' -f 2) >> $GITHUB_ENV
         cargo build --release
         mv target/release/cinyras.exe cinyras.exe
     - name: Upload

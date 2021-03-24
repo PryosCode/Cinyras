@@ -1,9 +1,10 @@
 <a href="examples/HelloWorld.cys"><img align="center" width="100%" alt="Hello World!" src="img/hello-world.png"></a>
 
 <p align="center">
-    <a href="https://github.com/PryosCode/Cinyras/releases"><img src="https://img.shields.io/github/downloads/PryosCode/Cinyras/total?label=Downloads" alt="Downloads"></a>
-    <a href="https://github.com/PryosCode/Cinyras/blob/master/LICENSE"><img src="https://img.shields.io/github/license/PryosCode/Cinyras?label=License" alt="License"></a>
-    <a href="https://discord.gg/bF2GRHq"><img src="https://discordapp.com/api/guilds/350302354639290379/widget.png" alt="Discord"></a>
+    <a href="https://github.com/PryosCode/Cinyras/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/PryosCode/Cinyras/total?label=Downloads"></a>
+    <a href="https://github.com/PryosCode/Cinyras/releases"><img alt="Build" src="https://github.com/PryosCode/Cinyras/actions/workflows/cargo.yml/badge.svg"></a>
+    <a href="https://github.com/PryosCode/Cinyras/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/PryosCode/Cinyras?label=License"></a>
+    <a href="https://discord.gg/bF2GRHq"><img alt="Discord" src="https://discord.com/api/guilds/350302354639290379/widget.png"></a>
 </p>
 
 # Cinyras

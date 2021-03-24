@@ -15,21 +15,21 @@ Cinyras is a [high level](https://en.wikipedia.org/wiki/High-level_programming_l
 _The interpreter is not production ready and is mainly intended for testing algorithms or other small programs. It could easily break your code in a future update._
 
 1. [Installation](#installation)
-    1. [Snap Store](#snap-store)
-    2. [Flathub](#flathub)
-    3. [Arch Linux](#arch-linux)
-    4. [Windows](#windows)
+   - [Snap Store](#snap-store)
+   - [Flathub](#flathub)
+   - [Arch Linux](#arch-linux)
+   - [Windows](#windows)
 2. [Download](#download)
-   1. [Release](#release)
-   2. [Docker](#docker)
+   - [Release](#release)
+   - [Docker](#docker)
 2. [Test Installation](#test-installation)
-   1. [Input](#input)
-   2. [Output](#output)
+   - [Input](#input)
+   - [Output](#output)
 3. [How to use](#how-to-use)
 4. [Comparison](#comparison)
-    1. [Cinyras](#cinyras-1)
-    2. [C++](#c)
-    3. [Java](#java)
+   - [Cinyras](#cinyras-1)
+   - [C++](#c)
+   - [Java](#java)
 5. [Dependencies](#dependencies)
 6. [License](#license)
 
@@ -38,11 +38,9 @@ _The interpreter is not production ready and is mainly intended for testing algo
 _Doesn't actually work yet._
 
 ### Snap Store
-
 _Coming Soon._
 
 ### Flathub
-
 _Coming Soon._
 
 ### Arch Linux
@@ -65,11 +63,9 @@ setx path "%path%;%localappdata%\\Cinyras\\"
 ## Download
 
 ### Release
-
 [Download](https://github.com/PryosCode/Cinyras/releases)
 
 ### Docker
-
 ```bash
 docker run -ti pryoscode/cinyras [FLAGS] <FILE> [ARGS]...
 ```

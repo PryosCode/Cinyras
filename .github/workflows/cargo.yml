@@ -21,10 +21,11 @@ jobs:
       run: |
         cargo build --release
         echo "CARGO_VERSION=$(cat Cargo.toml | grep -m 1 'version =' | cut -d '"' -f 2)" >> $GITHUB_ENV
+        mv target/release/cinyras cinyras-linux
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        files: target/release/cinyras
+        files: cinyras-linux
         tag_name: v${{ env.CARGO_VERSION }}
         draft: true
       env:
@@ -41,11 +42,13 @@ jobs:
       with:
         toolchain: stable
     - name: Cargo
-      run: cargo build --release
+      run: |
+        cargo build --release
+        mv target/release/cinyras cinyras-windows
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        files: target/release/cinyras
+        files: cinyras-windows
         tag_name: v${{ env.CARGO_VERSION }}
         draft: true
       env:
@@ -62,11 +65,13 @@ jobs:
       with:
         toolchain: stable
     - name: Cargo
-      run: cargo build --release
+      run: |
+        cargo build --release
+        mv target/release/cinyras cinyras-macos
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        files: target/release/cinyras
+        files: cinyras-macos
         tag_name: v${{ env.CARGO_VERSION }}
         draft: true
       env:

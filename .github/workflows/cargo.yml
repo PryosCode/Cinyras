@@ -44,11 +44,11 @@ jobs:
     - name: Cargo
       run: |
         cargo build --release
-        mv target/release/cinyras cinyras-windows
+        mv target/release/cinyras cinyras.exe
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        files: cinyras-windows
+        files: cinyras.exe
         tag_name: v${{ env.CARGO_VERSION }}
         draft: true
       env:

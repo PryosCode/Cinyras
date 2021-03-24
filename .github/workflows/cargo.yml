@@ -22,8 +22,8 @@ jobs:
         toolchain: stable
     - name: Cargo
       run: |
-        cargo build --release
         echo CARGO_VERSION=$(cat Cargo.toml | grep -m 1 'version =' | cut -d '"' -f 2) >> $GITHUB_ENV
+        cargo build --release
         mv target/release/cinyras cinyras-linux
     - name: Upload
       uses: softprops/action-gh-release@v1
@@ -46,8 +46,8 @@ jobs:
         toolchain: stable
     - name: Cargo
       run: |
-        cargo build --release
         echo CARGO_VERSION=$(cat Cargo.toml | grep -m 1 'version =' | cut -d "\"" -f 2) >> $GITHUB_ENV
+        cargo build --release
         mv target/release/cinyras.exe cinyras.exe
     - name: Upload
       uses: softprops/action-gh-release@v1
@@ -70,8 +70,8 @@ jobs:
         toolchain: stable
     - name: Cargo
       run: |
-        cargo build --release
         echo CARGO_VERSION=$(cat Cargo.toml | grep -m 1 'version =' | cut -d '"' -f 2) >> $GITHUB_ENV
+        cargo build --release
         mv target/release/cinyras cinyras-macos
     - name: Upload
       uses: softprops/action-gh-release@v1

@@ -18,7 +18,17 @@ jobs:
       with:
         toolchain: stable
     - name: Cargo
-      run: cargo build --release
+      run: |
+        cargo build --release
+        echo "CARGO_VERSION=$(cat Cargo.toml | grep -m 1 'version =' | cut -d '"' -f 2)" >> $GITHUB_ENV
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: target/release/cinyras
+        tag_name: v${{ env.CARGO_VERSION }}
+        draft: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   windows:
     name: Windows

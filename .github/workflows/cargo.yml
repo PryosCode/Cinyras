@@ -20,7 +20,7 @@ jobs:
     - name: Cargo
       run: |
         cargo build --release
-        echo "CARGO_VERSION=$(cat Cargo.toml | grep -m 1 'version =' | cut -d \" -f 2)" >> $GITHUB_ENV
+        echo CARGO_VERSION=$(cat Cargo.toml | grep -m 1 'version =' | cut -d '"' -f 2) >> $GITHUB_ENV
         mv target/release/cinyras cinyras-linux
     - name: Upload
       uses: softprops/action-gh-release@v1
@@ -44,7 +44,7 @@ jobs:
     - name: Cargo
       run: |
         cargo build --release
-        echo "CARGO_VERSION=$(cat Cargo.toml | grep -m 1 'version =' | cut -d \" -f 2)" >> $GITHUB_ENV
+        echo CARGO_VERSION=$(cat Cargo.toml | grep -m 1 'version =' | cut -d '"' -f 2) >> $GITHUB_ENV
         mv target/release/cinyras.exe cinyras.exe
     - name: Upload
       uses: softprops/action-gh-release@v1
@@ -68,7 +68,7 @@ jobs:
     - name: Cargo
       run: |
         cargo build --release
-        echo "CARGO_VERSION=$(cat Cargo.toml | grep -m 1 'version =' | cut -d \" -f 2)" >> $GITHUB_ENV
+        echo CARGO_VERSION=$(cat Cargo.toml | grep -m 1 'version =' | cut -d '"' -f 2) >> $GITHUB_ENV
         mv target/release/cinyras cinyras-macos
     - name: Upload
       uses: softprops/action-gh-release@v1
@@ -87,7 +87,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Version
-      run: echo "CARGO_VERSION=$(cat Cargo.toml | grep -m 1 'version =' | cut -d \" -f 2)" >> $GITHUB_ENV
+      run: echo CARGO_VERSION=$(cat Cargo.toml | grep -m 1 'version =' | cut -d '"' -f 2) >> $GITHUB_ENV
     - name: Publish
       uses: softprops/action-gh-release@v1
       with:

@@ -42,6 +42,14 @@ jobs:
         toolchain: stable
     - name: Cargo
       run: cargo build --release
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: target/release/cinyras
+        tag_name: v${{ env.CARGO_VERSION }}
+        draft: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   macos:
     name: MacOS
@@ -55,3 +63,11 @@ jobs:
         toolchain: stable
     - name: Cargo
       run: cargo build --release
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: target/release/cinyras
+        tag_name: v${{ env.CARGO_VERSION }}
+        draft: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

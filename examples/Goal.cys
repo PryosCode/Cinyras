@@ -87,7 +87,7 @@ void main(str[] args) {
     // external files
 
     int pqr = 10;
-    print("Is " + pqr + " equal to 10? --> " + Utils.is_10(10));
+    print("Is " + pqr + " equal to 10? --> " + Utils.is_10(pqr));
 
 }
 

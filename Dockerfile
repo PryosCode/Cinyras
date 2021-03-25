@@ -9,4 +9,4 @@ RUN apt-get -y install libssl-dev
 RUN git clone https://github.com/PryosCode/Cinyras.git .
 RUN cargo build --release
 
-ENTRYPOINT target/release/cinyras
+ENTRYPOINT [ "target/release/cinyras" ]

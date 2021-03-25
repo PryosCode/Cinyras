@@ -19,8 +19,8 @@ void main(str[] args) {
 
     print((4 + 5) / 2 - 1 * 2);
     print(random());
-    print(random(100));
-    print(random(100, 200));
+    print(random(10));
+    print(random(10, 100));
 
 
     // if, if else, else if and switch case
@@ -37,9 +37,9 @@ void main(str[] args) {
         print("ghi is null");
     }
 
-    if ghi >= 0 {
+    if ghi > 0 {
         print("ghi is positive");
-    } else if ghi <= 0 {
+    } else if ghi < 0 {
         print("ghi is negative");
     } else {
         print("ghi is zero");

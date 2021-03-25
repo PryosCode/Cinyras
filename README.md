@@ -14,18 +14,6 @@ Cinyras is a [high level](https://en.wikipedia.org/wiki/High-level_programming_l
 
 _The interpreter is not production ready and is mainly intended for testing algorithms or other small programs. It could easily break your code in a future update._
 
-1. [Installation](#installation)
-2. [Test Installation](#test-installation)
-   - [Input](#input)
-   - [Output](#output)
-3. [How to use](#how-to-use)
-4. [Comparison](#comparison)
-   - [Cinyras](#cinyras-1)
-   - [C++](#c)
-   - [Java](#java)
-5. [Dependencies](#dependencies)
-6. [License](#license)
-
 ## Installation
 
 [Wiki](https://github.com/PryosCode/Cinyras/wiki/Installation)

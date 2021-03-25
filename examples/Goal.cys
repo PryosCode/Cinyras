@@ -12,7 +12,7 @@ void main(str[] args) {
     int abc = 58;
     int def = 100;
     def -= abc;
-    print("Is the answer " + def + "?");
+    print("Is the answer " + def + "? --> " + is_42(def));
 
 
     // random
@@ -91,6 +91,6 @@ void main(str[] args) {
 
 }
 
-bool get_answer(int x, char y) {
+bool is_42(int x, char? y = 'x') {
     return x == 42 || (y && y == 'y');
 }

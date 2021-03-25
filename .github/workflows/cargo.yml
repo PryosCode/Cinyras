@@ -48,7 +48,7 @@ jobs:
       run: |
         cargo build --release
         mv target/release/cinyras.exe cinyras-windows.exe
-        echo CARGO_VERSION=$(./cinyras-windows.exe -V | cut -d ' ' -f 2) >> $GITHUB_ENV
+        echo CARGO_VERSION=$(./cinyras-windows.exe -V) >> $GITHUB_ENV
     - name: Upload
       uses: softprops/action-gh-release@v1
       with:
@@ -90,7 +90,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Version
-        run: echo CARGO_VERSION=$(cat Cargo.toml| grep 'version =' -m 1 | cut -d '"' -f 2) >> $GITHUB_ENV
+        run: echo CARGO_VERSION=$(cat Cargo.toml | grep 'version =' -m 1 | cut -d '"' -f 2) >> $GITHUB_ENV
       - name: Publish
         uses: softprops/action-gh-release@v1
         with:

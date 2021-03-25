@@ -15,13 +15,6 @@ Cinyras is a [high level](https://en.wikipedia.org/wiki/High-level_programming_l
 _The interpreter is not production ready and is mainly intended for testing algorithms or other small programs. It could easily break your code in a future update._
 
 1. [Installation](#installation)
-   - [Snap Store](#snap-store)
-   - [Flathub](#flathub)
-   - [Arch Linux](#arch-linux)
-   - [Windows](#windows)
-2. [Download](#download)
-   - [Release](#release)
-   - [Docker](#docker)
 2. [Test Installation](#test-installation)
    - [Input](#input)
    - [Output](#output)

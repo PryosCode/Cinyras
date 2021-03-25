@@ -10,9 +10,9 @@ void main(str[] args) {
     // calculation
 
     int abc = 58;
-    int xyz = 100;
-    xyz -= abc;
-    print("Is the answer " + xyz + "?");
+    int def = 100;
+    def -= abc;
+    print("Is the answer " + def + "?");
 
 
     // random
@@ -23,25 +23,37 @@ void main(str[] args) {
     print(random(100, 200));
 
 
-    // if, if else and switch case
+    // if, if else, else if and switch case
 
-    int iii = 123;
+    int ghi = 123;
 
-    if iii {
-        print("iii is not null");
-    } else if iii == null {
-        print("iii is null");
+    if ghi == 123 {
+        print("ghi is 123");
     }
 
-    switch iii {
+    if ghi {
+        print("ghi is not null");
+    } else {
+        print("ghi is null");
+    }
+
+    if ghi >= 0 {
+        print("ghi is positive");
+    } else if ghi <= 0 {
+        print("ghi is negative");
+    } else {
+        print("ghi is zero");
+    }
+
+    switch ghi {
         1 {
             print("One");
         }
-        2..5 {
-            print("Two --> Five");
+        2, 3, 4, 5 {
+            print("Two, Three, Four or Five");
         }
-        6, 7, 8 {
-            print("Six, Seven or Eight");
+        6..10 {
+            print("Six --> Ten");
         }
         ? {
             print("Default");
@@ -51,14 +63,19 @@ void main(str[] args) {
 
     // while, for and for each loops
 
-    int ijk = 0;
-    while ijk < 100 {
-        print(ijk);
-        ijk++;
+    int jkl = 0;
+    while jkl < 10 {
+        print(jkl);
+        jkl++;
     }
 
-    for int i in 0..99 {
-        print(l);
+    for int i in 0..10 {
+        print(i);
+    }
+
+    int mno = 10;
+    for int i in 1..mno {
+        print(i);
     }
 
     str[] strings = [ "S1", "S2", "S3" ];
@@ -69,10 +86,11 @@ void main(str[] args) {
 
     // external files
 
-    print("Is " + iii + " equal to 100? --> " + Utils.is_100(iii));
+    int pqr = 10;
+    print("Is " + pqr + " equal to 10? --> " + Utils.is_10(10));
 
 }
 
 bool get_answer(int x, char y) {
-    return x == 42 || (y != null && y == 'y');
+    return x == 42 || (y && y == 'y');
 }

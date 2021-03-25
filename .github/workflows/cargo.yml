@@ -48,7 +48,7 @@ jobs:
       run: |
         cargo build --release
         mv target/release/cinyras.exe cinyras-windows.exe
-        echo CARGO_VERSION=$(./cinyras-windows.exe -V) | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+        echo CARGO_VERSION=$(./cinyras-windows.exe -V | cut -d ' ' -f 2) | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
     - name: Upload
       uses: softprops/action-gh-release@v1
       with:

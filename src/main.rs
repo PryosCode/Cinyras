@@ -1,14 +1,14 @@
-extern crate clap;
-use clap::{App, Arg};
+use clap::{ App, Arg };
+use inflector::Inflector;
 
 mod lexer;
 mod parser;
 
 fn main() {
-    let matches = App::new("Cinyras")
-        .version("0.0.1")
-        .author("PryosCode <info@pryoscode.net>")
-        .about("Cinyras is a high level general purpose interpreted scripting language with its own interpreter written in Rust.")
+    let matches = App::new(env!("CARGO_PKG_NAME").to_title_case())
+        .version(env!("CARGO_PKG_VERSION"))
+        .author(env!("CARGO_PKG_AUTHORS"))
+        .about(env!("CARGO_PKG_DESCRIPTION"))
         .arg(Arg::with_name("FILE")
             .help("Sets the input file to use")
             .required(true))
@@ -20,7 +20,6 @@ fn main() {
             .long("verbose")
             .help("Use verbose output"))
         .get_matches();
-
     let file = matches.value_of("FILE").unwrap();
     let content;
     if file.to_lowercase().starts_with("http:") || file.to_lowercase().starts_with("https:") {
@@ -36,7 +35,7 @@ fn main() {
 
     if matches.is_present("ARGS") {
         for arg in matches.values_of("ARGS").unwrap().collect::<Vec<_>>() {
-            print!("{} ", arg)
+            print!("{} ", arg);
         }
     }
 }

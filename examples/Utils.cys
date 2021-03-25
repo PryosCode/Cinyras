@@ -1,0 +1,3 @@
+bool is_100(int i) {
+    return i == 100;
+}

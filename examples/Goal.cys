@@ -1,23 +1,38 @@
+import "Utils";
+
 void main(str[] args) {
+
+    // print
+
     print("Hello World!");
+
+
+    // calculation
 
     int abc = 58;
     int xyz = 100;
     xyz -= abc;
     print("Is the answer " + xyz + "?");
 
-    int ijk = 99;
-    while ijk > 0 {
-        print(ijk);
-        ijk--;
-    }
+
+    // random
 
     print((4 + 5) / 2 - 1 * 2);
     print(random());
     print(random(100));
     print(random(100, 200));
 
+
+    // if, if else and switch case
+
     int iii = 123;
+
+    if iii {
+        print("iii is not null");
+    } else if iii == null {
+        print("iii is null");
+    }
+
     switch iii {
         1 {
             print("One");
@@ -26,27 +41,38 @@ void main(str[] args) {
             print("Two --> Five");
         }
         6, 7, 8 {
-            print("Six or Seven or Eight");
+            print("Six, Seven or Eight");
         }
         ? {
-            print("Unknown");
+            print("Default");
         }
+    }
+
+
+    // while, for and for each loops
+
+    int ijk = 0;
+    while ijk < 100 {
+        print(ijk);
+        ijk++;
     }
 
     for int i in 0..99 {
         print(l);
     }
+
+    str[] strings = [ "S1", "S2", "S3" ];
+    for str s in strings {
+        print(s);
+    }
+
+
+    // external files
+
+    print("Is " + iii + " equal to 100? --> " + Utils.is_100(iii));
+
 }
 
 bool get_answer(int x, char y) {
     return x == 42 || (y != null && y == 'y');
 }
-
-
-
-void print(str text);
-int random();
-int random(int max);
-int random(int min, int max);
-str file_read(str path);
-bool file_write(str path, str content);

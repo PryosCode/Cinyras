@@ -1,5 +1,5 @@
 // This is a test file and will not represent the final language.
 
 void main() {
-    println("Hello World!");
+    print("Hello World!");
 }

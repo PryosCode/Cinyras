@@ -1,41 +1,40 @@
 void main(str[] args) {
-    println("Hello World!");
+    print("Hello World!");
 
     int abc = 58;
     int xyz = 100;
     xyz -= abc;
-    println("Is the answer " + xyz + "?");
+    print("Is the answer " + xyz + "?");
 
     int ijk = 99;
     while ijk > 0 {
         print(ijk);
         ijk--;
     }
-    println();
 
-    println((4 + 5) / 2 - 1 * 2);
-    println(random());
-    println(random(100));
-    println(random(100, 200));
+    print((4 + 5) / 2 - 1 * 2);
+    print(random());
+    print(random(100));
+    print(random(100, 200));
 
     int iii = 123;
     switch iii {
         1 {
-            println("One");
+            print("One");
         }
         2..5 {
-            println("Two --> Five");
+            print("Two --> Five");
         }
         6, 7, 8 {
-            println("Six or Seven or Eight");
+            print("Six or Seven or Eight");
         }
         ? {
-            println("Unknown");
+            print("Unknown");
         }
     }
 
     for int i in 0..99 {
-        println(l);
+        print(l);
     }
 }
 
@@ -45,10 +44,7 @@ bool get_answer(int x, char y) {
 
 
 
-void print();
-void println();
 void print(str text);
-void println(str text);
 int random();
 int random(int max);
 int random(int min, int max);

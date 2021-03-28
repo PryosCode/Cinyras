@@ -32,10 +32,14 @@ fn main() {
         content = std::fs::read_to_string(file).unwrap();
     }
     println!("{}", content);
+    println!();
 
     if matches.is_present("ARGS") {
         for arg in matches.values_of("ARGS").unwrap().collect::<Vec<_>>() {
             print!("{} ", arg);
         }
     }
+
+    let tokens = lexer::tokenize(content);
+    print!("{:?}", tokens);
 }

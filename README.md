@@ -77,6 +77,7 @@ public class Main {
 
 - [clap](https://crates.io/crates/clap/2.33.3)
 - [Inflector](https://crates.io/crates/Inflector/0.11.4)
+- [regex](https://crates.io/crates/1.4.5)
 - [reqwest](https://crates.io/crates/reqwest/0.11.0)
 
 ## License

@@ -40,6 +40,6 @@ fn main() {
         }
     }
 
-    let tokens = lexer::tokenize(content);
-    print!("{:?}", tokens);
+    //let tokens = lexer::tokenize(content);
+    //print!("{:?}", tokens);
 }

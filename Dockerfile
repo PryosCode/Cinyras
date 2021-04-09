@@ -1,11 +1,8 @@
-FROM rust:slim-buster
+FROM debian:buster-slim
 
-RUN apt-get update && \
-    apt-get -y install git pkg-config libssl-dev
-
-WORKDIR /cargo
+WORKDIR /build
 RUN git clone https://github.com/PryosCode/Cinyras.git . && \
-    cargo build --release
+    gcc src/main.c -o cinyras
 
 WORKDIR /cinyras
-ENTRYPOINT [ "/cargo/target/release/cinyras" ]
+ENTRYPOINT [ "/build/cinyras" ]

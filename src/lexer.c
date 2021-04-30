@@ -1,5 +1,4 @@
 #include "lexer.h"
 
-void tokenize()
-{
+void tokenize() {
 }

@@ -23,6 +23,6 @@ int main(int argc, char *argv[])
     }
     else
     {
-        printf("Wrong arguemnts");
+        printf("Wrong arguemnts\n");
     }
 }

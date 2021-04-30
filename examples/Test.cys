@@ -1,3 +1,2 @@
-40 + 60;
-80 / 2 + 30 * 2;
-80 / (2 + 30) * 2;
+PRINT "Hello World!"
+PRINT "Second Line"

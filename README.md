@@ -2,7 +2,7 @@
 
 <p align="center">
     <a href="https://github.com/PryosCode/Cinyras/wiki/Installation"><img alt="Version" src="https://img.shields.io/github/v/release/PryosCode/Cinyras?label=Version"></a>
-    <a href="https://github.com/PryosCode/Cinyras/releases"><img alt="Build" src="https://github.com/PryosCode/Cinyras/actions/workflows/cargo.yml/badge.svg"></a>
+    <a href="https://github.com/PryosCode/Cinyras/releases"><img alt="Build" src="https://github.com/PryosCode/Cinyras/actions/workflows/gcc.yml/badge.svg"></a>
     <a href="https://hub.docker.com/r/pryoscode/cinyras"><img alt="Size" src="https://img.shields.io/docker/image-size/pryoscode/cinyras?label=Size"></a>
     <a href="https://github.com/PryosCode/Cinyras/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/PryosCode/Cinyras?label=License"></a>
     <a href="https://discord.gg/bF2GRHq"><img alt="Discord" src="https://discord.com/api/guilds/350302354639290379/widget.png"></a>

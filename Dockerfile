@@ -2,7 +2,7 @@ FROM debian:buster-slim
 WORKDIR /build
 
 RUN apt-get update && \
-    apt install git && \
+    apt-get install -y git build-essential && \
     git clone https://github.com/PryosCode/Cinyras.git . && \
     make
 

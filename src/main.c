@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include <curl/curl.h>
+#include "interpreter/lexer.h"
 
 const char *read_file(const char *file) {
     static char str[] = "";
@@ -13,6 +15,7 @@ const char *read_file(const char *file) {
 }
 
 int main(int argc, char *argv[]) {
+    tokenize();
     if (argc > 1) {
         const char *content = read_file(argv[1]);
         printf(content);

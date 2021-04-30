@@ -16,14 +16,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Setup
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-      - name: Cargo
+      - name: Make
         run: |
-          cargo build --release
-          mv target/release/cinyras cinyras-linux
+          make
+          mv cinyras cinyras-linux
           echo VERSION=$(./cinyras-linux -V | cut -d ' ' -f 2) >> $GITHUB_ENV
       - name: Upload
         uses: softprops/action-gh-release@v1
@@ -40,14 +36,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Setup
-      uses: actions-rs/toolchain@v1
-      with:
-        toolchain: stable
-    - name: Cargo
+    - name: Make
       run: |
-        cargo build --release
-        mv target/release/cinyras.exe cinyras-windows.exe
+        make
+        mv cinyras.exe cinyras-windows.exe
         echo VERSION=$(./cinyras-windows.exe -V | cut -d ' ' -f 2) | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
     - name: Upload
       uses: softprops/action-gh-release@v1
@@ -64,13 +56,9 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Setup
-      uses: actions-rs/toolchain@v1
-      with:
-        toolchain: stable
-    - name: Cargo
+    - name: Make
       run: |
-        cargo build --release
+        make
         mv target/release/cinyras cinyras-macos
         echo VERSION=$(./cinyras-macos -V | cut -d ' ' -f 2) >> $GITHUB_ENV
     - name: Upload

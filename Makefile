@@ -1,2 +1,9 @@
-cinyras: src/main.c src/lexer.c src/lexer.h
-	gcc -o cinyras src/main.c src/lexer.c
+SRCS = $(wildcard src/*.c src/cli/*.c src/interpreter/*.c)
+
+OBJS=$(SRCS:.c=.o)
+
+cinyras: $(OBJS)
+	gcc -o $@ $(OBJS)
+
+clean:
+	find . -name *.o -delete

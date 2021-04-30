@@ -23,7 +23,7 @@ _The interpreter is not production ready and is mainly intended for small progra
 ### Input
 
 ```bash
-cinyras https://github.com/PryosCode/Cinyras/raw/master/examples/HelloWorld.cys
+cinyras https://git.io/J336G
 ```
 
 ### Output

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-#include <curl/curl.h>
-#include "lexer.h"
+#include "string.h"
+#include "curl.h"
 
 const char *read_file(const char *file) {
     static char str[] = "";
@@ -23,11 +23,16 @@ int main(int argc, char *argv[]) {
     }
     printf("\n");
 
-    tokenize();
-
     if (argc > 1) {
-        printf("%s\n", read_file(argv[1]));
+        const char *file = argv[1];
+        if (strstarts("http://", file) || strstarts("https://", file)) {
+            const char *data = read_page(file);
+            printf("%s\n", data);
+        } else {
+            const char *data = read_file(file);
+            printf("%s\n", data);
+        }
     } else {
-        printf("Wrong arguemnts\n");
+        printf("Wrong arguments\n");
     }
 }

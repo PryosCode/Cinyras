@@ -1,7 +1,5 @@
-#ifndef INTERPRETER_LEXER_H
-#define INTERPRETER_LEXER_H
-
-#include <stdio.h>
+#ifndef LEXER_H
+#define LEXER_H
 
 void tokenize();
 

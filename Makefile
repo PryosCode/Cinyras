@@ -1,4 +1,4 @@
-SRCS = $(wildcard src/*.c src/cli/*.c src/interpreter/*.c)
+SRCS = $(wildcard src/*.c)
 
 OBJS=$(SRCS:.c=.o)
 

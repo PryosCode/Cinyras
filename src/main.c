@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <curl/curl.h>
-#include "interpreter/lexer.h"
+#include "lexer.h"
 
 const char *read_file(const char *file) {
     static char str[] = "";
@@ -15,10 +15,18 @@ const char *read_file(const char *file) {
 }
 
 int main(int argc, char *argv[]) {
+    for (int i = 0; i < argc; i++) {
+        for (int j = 0; j < strlen(argv[i]); j++){
+            printf("%c", argv[i][j]);
+        }
+        printf(" ");
+    }
+    printf("\n");
+
     tokenize();
+
     if (argc > 1) {
-        const char *content = read_file(argv[1]);
-        printf(content);
+        printf("%s\n", read_file(argv[1]));
     } else {
         printf("Wrong arguemnts\n");
     }

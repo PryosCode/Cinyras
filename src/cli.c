@@ -24,9 +24,8 @@ bool version() {
     return true;
 }
 
-bool verbose() {
+void verbose() {
     printf("Coming Soon\n");
-    return false;
 }
 
 bool parse(int argc, char *argv[]) {
@@ -39,14 +38,14 @@ bool parse(int argc, char *argv[]) {
             } else if(!strcmp(w, "version")) {
                 return version();
             } else if(!strcmp(w, "verbose")) {
-                return verbose();
+                verbose();
             }
         } else if (strsta("-", w)) {
             for (int j = 1; j < strlen(w); j++) {
                 switch(w[j]) {
                     case 'h': return help();
                     case 'V': return version();
-                    case 'v': return verbose();
+                    case 'v': verbose(); break;
                 }
             }
         }

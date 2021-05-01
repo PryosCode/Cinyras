@@ -17,6 +17,10 @@ jobs:
       uses: actions/checkout@v2
     - name: Make
       run: |
+        git clone https://github.com/Microsoft/vcpkg.git .
+        ./bootstrap-vcpkg.sh
+        ./vcpkg integrate install
+        vcpkg install curl[tool]
         make
         mv cinyras.exe cinyras-windows.exe
         echo VERSION=$(./cinyras-windows.exe -V | cut -d ' ' -f 2) | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append

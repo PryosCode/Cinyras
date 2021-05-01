@@ -5,7 +5,10 @@ void usage() {
     printf("    cinyras [FLAGS] <FILE> [ARGS]...\n");
 }
 
-bool help() {
+void help() {
+    version();
+    printf("Cinyras is a high level general purpose interpreted scripting language with its own interpreter.\n");
+    printf("\n");
     usage();
     printf("\n");
     printf("FLAGS:\n");
@@ -16,12 +19,10 @@ bool help() {
     printf("ARGS:\n");
     printf("    <FILE>      Sets the input file to use\n");
     printf("    <ARGS>...   Arguments passed to script\n");
-    return true;
 }
 
-bool version() {
+void version() {
     printf("Cinyras 0.0.1\n");
-    return true;
 }
 
 void verbose() {
@@ -34,17 +35,20 @@ bool parse(int argc, char *argv[]) {
         if (strsta("--", w)) {
             w += 2;
             if (!strcmp(w, "help")) {
-                return help();
+                help();
+                return true;
             } else if(!strcmp(w, "version")) {
-                return version();
+                version();
+                return true;
             } else if(!strcmp(w, "verbose")) {
                 verbose();
+                return false;
             }
         } else if (strsta("-", w)) {
             for (int j = 1; j < strlen(w); j++) {
                 switch(w[j]) {
-                    case 'h': return help();
-                    case 'V': return version();
+                    case 'h': help(); return true;
+                    case 'V': version(); return true;
                     case 'v': verbose(); break;
                 }
             }

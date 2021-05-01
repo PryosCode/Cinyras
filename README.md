@@ -20,15 +20,8 @@ _The interpreter is not production ready and is mainly intended for small progra
 
 ## Test Installation
 
-### Input
-
 ```bash
-cinyras https://git.io/J336G
-```
-
-### Output
-
-```
+$ cinyras https://git.io/J336G
 Hello World!
 ```
 
@@ -39,13 +32,13 @@ USAGE:
     cinyras [FLAGS] <FILE> [ARGS]...
 
 FLAGS:
-    -h, --help       Prints help information
-    -V, --version    Prints version information
-    -v, --verbose    Use verbose output
+    -h, --help      Prints help information
+    -V, --version   Prints version information
+    -v, --verbose   Use verbose output
 
 ARGS:
-    <FILE>       Sets the input file to use
-    <ARGS>...    Arguments passed to script
+    <FILE>      Sets the input file to use
+    <ARGS>...   Arguments passed to script
 ```
 
 ## Comparison

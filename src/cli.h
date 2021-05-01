@@ -6,6 +6,7 @@
 #include <stdbool.h>
 #include "string.h"
 
+void usage();
 bool parse(int argc, char *argv[]);
 
 #endif

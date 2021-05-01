@@ -34,6 +34,8 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    printf("Wrong arguments\n");
+    usage();
+    printf("\n");
+    printf("For more information try --help\n");
     return 1;
 }

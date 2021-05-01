@@ -1,8 +1,12 @@
 #include "cli.h"
 
-bool help() {
+void usage() {
     printf("USAGE:\n");
     printf("    cinyras [FLAGS] <FILE> [ARGS]...\n");
+}
+
+bool help() {
+    usage();
     printf("\n");
     printf("FLAGS:\n");
     printf("    -h, --help      Prints help information\n");
@@ -30,11 +34,11 @@ bool parse(int argc, char *argv[]) {
         const char *w = argv[i];
         if (strsta("--", w)) {
             w += 2;
-            if (strcmp(w, "help") == 0) {
+            if (!strcmp(w, "help")) {
                 return help();
-            } else if(strcmp(w, "version") == 0) {
+            } else if(!strcmp(w, "version")) {
                 return version();
-            } else if(strcmp(w, "verbose") == 0) {
+            } else if(!strcmp(w, "verbose")) {
                 return verbose();
             }
         } else if (strsta("-", w)) {

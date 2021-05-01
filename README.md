@@ -2,9 +2,9 @@
 
 <p align="center">
     <a href="https://github.com/PryosCode/Cinyras/wiki/Installation"><img alt="Version" src="https://img.shields.io/github/v/release/PryosCode/Cinyras?label=Version"></a>
-    <a href="https://github.com/PryosCode/Cinyras/releases"><img alt="Linux" src="https://github.com/PryosCode/Cinyras/actions/workflows/linux.yml/badge.svg"></a>
-    <a href="https://github.com/PryosCode/Cinyras/releases"><img alt="Windows" src="https://github.com/PryosCode/Cinyras/actions/workflows/windows.yml/badge.svg"></a>
-    <a href="https://github.com/PryosCode/Cinyras/releases"><img alt="MacOS" src="https://github.com/PryosCode/Cinyras/actions/workflows/macos.yml/badge.svg"></a>
+    <a href="https://github.com/PryosCode/Cinyras/actions"><img alt="Linux" src="https://github.com/PryosCode/Cinyras/actions/workflows/linux.yml/badge.svg"></a>
+    <a href="https://github.com/PryosCode/Cinyras/actions"><img alt="Windows" src="https://github.com/PryosCode/Cinyras/actions/workflows/windows.yml/badge.svg"></a>
+    <a href="https://github.com/PryosCode/Cinyras/actions"><img alt="MacOS" src="https://github.com/PryosCode/Cinyras/actions/workflows/macos.yml/badge.svg"></a>
     <a href="https://github.com/PryosCode/Cinyras/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/PryosCode/Cinyras?label=License"></a>
 </p>
 

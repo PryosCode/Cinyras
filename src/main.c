@@ -16,12 +16,26 @@ const char *read_file(const char *file) {
 
 int main(int argc, char *argv[]) {
     for (int i = 0; i < argc; i++) {
-        for (int j = 0; j < strlen(argv[i]); j++){
-            printf("%c", argv[i][j]);
+        const char *w = argv[i];
+        if (strstarts("--", w)) {
+            printf("Coming Soon\n");
+            return 0;
+        } else if (strstarts("-", w)) {
+            for (int j = 1; j < strlen(w); j++) {
+                switch(w[j]) {
+                    case 'h':
+                        printf("Coming Soon\n");
+                    return 0;
+                    case 'V':
+                        printf("Cinyras 0.0.1 \n");
+                    return 0;
+                    case 'v':
+                        printf("Coming Soon\n");
+                    break;
+                }
+            }
         }
-        printf(" ");
     }
-    printf("\n");
 
     if (argc > 1) {
         const char *file = argv[1];

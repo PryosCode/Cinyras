@@ -1,5 +1,9 @@
 #include "cli.h"
 
+void version() {
+    printf("Cinyras 0.0.1\n");
+}
+
 void usage() {
     printf("USAGE:\n");
     printf("    cinyras [FLAGS] <FILE> [ARGS]...\n");
@@ -19,10 +23,6 @@ void help() {
     printf("ARGS:\n");
     printf("    <FILE>      Sets the input file to use\n");
     printf("    <ARGS>...   Arguments passed to script\n");
-}
-
-void version() {
-    printf("Cinyras 0.0.1\n");
 }
 
 void verbose() {

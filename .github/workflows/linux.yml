@@ -18,6 +18,7 @@ jobs:
       - name: Dependencies
         run: |
           sudo apt-get install -y libcurl3-gnutls-dev
+          curl --version
       - name: Make
         run: |
           make

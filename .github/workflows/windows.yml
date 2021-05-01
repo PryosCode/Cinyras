@@ -18,8 +18,8 @@ jobs:
     - name: Make
       run: |
         git clone https://github.com/Microsoft/vcpkg.git .
-        ./bootstrap-vcpkg.bat
-        ./vcpkg integrate install
+        bootstrap-vcpkg.bat
+        vcpkg integrate install
         vcpkg install curl[tool]
         make
         mv cinyras.exe cinyras-windows.exe

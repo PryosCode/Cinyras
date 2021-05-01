@@ -16,9 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Dependencies
-        run: |
-          sudo apt-get install -y libcurl3-gnutls-dev
-          curl --version
+        run: sudo apt-get install -y libcurl4-gnutls-dev
       - name: Make
         run: |
           make

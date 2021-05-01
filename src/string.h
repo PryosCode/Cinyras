@@ -1,9 +1,9 @@
 #ifndef STRING_H
 #define STRING_H
 
-#include <stdbool.h>
 #include <string.h>
+#include <stdbool.h>
 
-bool strstarts(const char *pre, const char* str);
+bool strsta(const char *pre, const char* str);
 
 #endif

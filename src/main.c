@@ -1,17 +1,26 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include "curl.h"
 #include "string.h"
 #include "cli.h"
 
-const char *read_file(const char *file) {
-    static char str[] = "";
+char *read_file(const char *file) {
     FILE *f = fopen(file, "r");
+    if (!f) {
+        return NULL;
+    }
+
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    fseek(f, 0, SEEK_SET);
+    char *str = malloc(size);
+
     char c;
     while ((c = fgetc(f)) != EOF) {
         strncat(str, &c, 1);
     }
-    fclose(f);
+
     return str;
 }
 
@@ -27,8 +36,13 @@ int main(int argc, char *argv[]) {
                 const char *data = read_page(file);
                 printf("%s\n", data);
             } else {
-                const char *data = read_file(file);
-                printf("%s\n", data);
+                char *data = read_file(file);
+                if (data) {
+                    printf("%s\n", data);
+                    free(data);
+                } else {
+                    printf("File not found.\n");
+                }
             }
             return 0;
         }

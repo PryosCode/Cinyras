@@ -19,7 +19,7 @@ jobs:
       run: |
         git clone https://github.com/microsoft/vcpkg.git
         .\vcpkg\bootstrap-vcpkg.bat
-        .\vcpkg\vcpkg install curl[tool]
+        .\vcpkg\vcpkg install curl
     - name: Make
       run: |
         make

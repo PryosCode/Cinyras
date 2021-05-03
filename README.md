@@ -1,4 +1,4 @@
-<a href="https://github.com/PryosCode/Cinyras/blob/master/examples/HelloWorld.cys"><img align="center" width="100%" alt="Hello World!" src="https://github.com/PryosCode/Cinyras/raw/master/img/hello-world.png"></a>
+<a href="https://github.com/PryosCode/Cinyras/blob/master/examples/HelloWorld.cys"><img align="center" width="100%" alt="Cinyras" src="https://github.com/PryosCode/Cinyras/raw/master/img/logo.png"></a>
 
 <p align="center">
     <a href="https://github.com/PryosCode/Cinyras/wiki/Installation"><img alt="Version" src="https://img.shields.io/github/v/release/PryosCode/Cinyras?label=Version"></a>
@@ -47,7 +47,7 @@ ARGS:
 
 ```
 void main(str[] args) {
-    println("Hello World!");
+    print("Hello World!");
 }
 ```
 

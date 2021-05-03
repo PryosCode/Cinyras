@@ -14,8 +14,13 @@ int main(int argc, char *argv[]) {
         const char *file = argv[i];
         if (!strsta("-", file)) {
             if (strsta("http://", file) || strsta("https://", file)) {
-                const char *data = read_page(file);
-                printf("%s\n", data);
+                char *data = read_page(file);
+                if (data) {
+                    printf("%s\n", data);
+                    free(data);
+                } else {
+                    printf("An error occurred.\n");
+                }
             } else {
                 char *data = read_file(file);
                 if (data) {

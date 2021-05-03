@@ -6,6 +6,6 @@
 #include <string.h>
 #include <curl/curl.h>
 
-const char *read_page(const char *url);
+char *read_page(const char *url);
 
 #endif

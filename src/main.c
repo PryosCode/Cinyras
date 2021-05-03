@@ -1,28 +1,9 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
-#include "curl.h"
+#include <stdlib.h>
 #include "string.h"
+#include "curl.h"
+#include "file.h"
 #include "cli.h"
-
-char *read_file(const char *file) {
-    FILE *f = fopen(file, "r");
-    if (!f) {
-        return NULL;
-    }
-
-    fseek(f, 0, SEEK_END);
-    long size = ftell(f);
-    fseek(f, 0, SEEK_SET);
-    char *str = malloc(size);
-
-    char c;
-    while ((c = fgetc(f)) != EOF) {
-        strncat(str, &c, 1);
-    }
-
-    return str;
-}
 
 int main(int argc, char *argv[]) {
     if (parse(argc, argv)) {

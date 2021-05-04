@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include "string.h"
 #include "curl.h"
 #include "file.h"
 #include "cli.h"
+
+bool verbose = false;
 
 int main(int argc, char *argv[]) {
     if (parse(argc, argv)) {

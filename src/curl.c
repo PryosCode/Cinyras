@@ -34,6 +34,11 @@ char *read_page(const char *url) {
   curl_easy_setopt(curl_handle, CURLOPT_WRITEFUNCTION, write_memory_callback);
   curl_easy_setopt(curl_handle, CURLOPT_WRITEDATA, (void *) &chunk);
   curl_easy_setopt(curl_handle, CURLOPT_USERAGENT, "libcurl-agent/1.0");
+
+  if (verbose) {
+    printf("GET: %s\n", url);
+  }
+
   res = curl_easy_perform(curl_handle);
  
   if(res != CURLE_OK) {

@@ -25,10 +25,6 @@ void help() {
     printf("    <ARGS>...   Arguments passed to script\n");
 }
 
-void verbose() {
-    printf("Coming Soon\n");
-}
-
 bool parse(int argc, char *argv[]) {
     for (int i = 1; i < argc; i++) {
         const char *w = argv[i];
@@ -41,7 +37,7 @@ bool parse(int argc, char *argv[]) {
                 version();
                 return true;
             } else if(!strcmp(w, "verbose")) {
-                verbose();
+                verbose = true;
                 return false;
             }
         } else if (strsta("-", w)) {
@@ -49,7 +45,7 @@ bool parse(int argc, char *argv[]) {
                 switch(w[j]) {
                     case 'h': help(); return true;
                     case 'V': version(); return true;
-                    case 'v': verbose(); break;
+                    case 'v': verbose = true; break;
                 }
             }
         }

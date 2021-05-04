@@ -5,6 +5,10 @@ char *read_file(const char *file) {
     if (!f) {
         return NULL;
     }
+    
+    if (verbose) {
+        printf("READ: %s\n", file);
+    }
 
     fseek(f, 0, SEEK_END);
     long size = ftell(f);

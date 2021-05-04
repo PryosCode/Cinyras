@@ -6,7 +6,7 @@
 #include "file.h"
 #include "cli.h"
 
-bool verbose = false;
+bool verbose;
 
 int main(int argc, char *argv[]) {
     if (parse(argc, argv)) {

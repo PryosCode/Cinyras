@@ -20,6 +20,7 @@ jobs:
         git clone https://github.com/microsoft/vcpkg.git
         .\vcpkg\bootstrap-vcpkg.bat
         .\vcpkg\vcpkg install curl
+        dir vcpkg\vcpkg\packages
     - name: Make
       run: |
         make

@@ -3,7 +3,7 @@ name: MacOS
 on:
   push:
     branches:
-    - master
+      - master
   pull_request:
     branches:
       - master
@@ -13,18 +13,18 @@ jobs:
     name: MacOS
     runs-on: macos-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Make
-      run: |
-        make
-        mv target/release/cinyras cinyras-macos
-        echo VERSION=$(./cinyras-macos -V | cut -d ' ' -f 2) >> $GITHUB_ENV
-    - name: Upload
-      uses: softprops/action-gh-release@v1
-      with:
-        files: cinyras-macos
-        tag_name: v${{ env.VERSION }}
-        draft: true
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Make
+        run: |
+          make
+          mv target/release/cinyras cinyras-macos
+          echo VERSION=$(./cinyras-macos -V | cut -d ' ' -f 2) >> $GITHUB_ENV
+      - name: Upload
+        uses: softprops/action-gh-release@v1
+        with:
+          files: cinyras-macos
+          tag_name: v${{ env.VERSION }}
+          draft: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

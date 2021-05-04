@@ -20,7 +20,6 @@ static size_t write_memory_callback(void *contents, size_t size, size_t nmemb, v
 }
  
 char *read_page(const char *url) {
-  /*
   CURL *curl_handle;
   CURLcode res;
   
@@ -45,10 +44,4 @@ char *read_page(const char *url) {
   curl_global_cleanup();
  
   return chunk.memory;
-  */
- 
-  char *str = "Coming Soon";
-  char *ptr = malloc(sizeof(str));
-  strcpy(ptr, str);
-  return ptr;
 }

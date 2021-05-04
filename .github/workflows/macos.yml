@@ -18,7 +18,7 @@ jobs:
       - name: Make
         run: |
           make
-          mv target/release/cinyras cinyras-macos
+          mv cinyras cinyras-macos
           echo VERSION=$(./cinyras-macos -V | cut -d ' ' -f 2) >> $GITHUB_ENV
       - name: Upload
         uses: softprops/action-gh-release@v1

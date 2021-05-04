@@ -1,3 +1,4 @@
 .vscode
+examples/Test.cys
 *.o
 cinyras*

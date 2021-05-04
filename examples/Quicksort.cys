@@ -1,0 +1,32 @@
+void main {
+    int[] array = { 5, 17, 14, 2, 28, 59, 78, 24, 26, 14 };
+    quicksort array, 0, array.length - 1;
+    print array;
+}
+
+void quicksort -> int[] array, int int low, int high {
+    if low < high {
+        int pi = partition array, low, high;
+        quicksort array, low, pi - 1;
+        quicksort array, pi + 1, high;
+    }
+}
+
+int partition -> int[] array, int low, int high {
+    int pivot = array[high];
+    int i = low - 1;
+    for int j in low -> high - 1 {
+        if array[j] < pivot {
+            i++;
+            swap array, i, j;
+        }
+    }
+    swap array, i + 1, high;
+    return i + 1;
+}
+
+void swap -> int[] array, int left, int right {
+    int temp = array[left];
+    array[left] = array[right];
+    array[right] = temp;
+}

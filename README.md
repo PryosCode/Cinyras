@@ -46,8 +46,8 @@ ARGS:
 ### Cinyras
 
 ```
-void main(str[] args) {
-    print("Hello World!");
+void main {
+    print "Hello World!";
 }
 ```
 

@@ -1,10 +1,11 @@
 import "Utils";
 
-void main(str[] args) {
+void main {
 
     // print
 
-    print("Hello World!");
+    print "Hello World!";
+    printf "Hello World!\n";
 
 
     // calculation
@@ -12,15 +13,15 @@ void main(str[] args) {
     int abc = 58;
     int def = 100;
     def -= abc;
-    print("Is the answer " + def + "? --> " + is_42(def));
+    print "Is the answer " + def + "? -> " + is_42 def;
 
 
     // random
 
-    print((4 + 5) / 2 - 1 * 2);
-    print(random());
-    print(random(10));
-    print(random(10, 100));
+    print ((4 + 5) / 2 - 1 * 2);
+    print random;
+    print random 10;
+    print random 10, 100;
 
 
     // if, if else, else if and switch case
@@ -28,35 +29,35 @@ void main(str[] args) {
     int ghi = 123;
 
     if ghi == 123 {
-        print("ghi is 123");
+        print "ghi is 123";
     }
 
     if ghi {
-        print("ghi is not null");
+        print "ghi is not null";
     } else {
-        print("ghi is null");
+        print "ghi is null";
     }
 
     if ghi > 0 {
-        print("ghi is positive");
+        print "ghi is positive";
     } else if ghi < 0 {
-        print("ghi is negative");
+        print "ghi is negative";
     } else {
-        print("ghi is zero");
+        print "ghi is zero";
     }
 
     switch ghi {
         1 {
-            print("One");
+            print "One";
         }
         2, 3, 4, 5 {
-            print("Two, Three, Four or Five");
+            print "Two, Three, Four or Five";
         }
-        6..10 {
-            print("Six --> Ten");
+        6 -> 10 {
+            print "Six, Seven, Eight, Nine or Ten";
         }
         ? {
-            print("Default");
+            print "Unknown";
         }
     }
 
@@ -65,32 +66,32 @@ void main(str[] args) {
 
     int jkl = 0;
     while jkl < 10 {
-        print(jkl);
+        print jkl;
         jkl++;
     }
 
-    for int i in 0..10 {
-        print(i);
+    for int i in 0 -> 10 {
+        print i;
     }
 
     int mno = 10;
-    for int i in 1..mno {
-        print(i);
+    for int i in 1 -> mno {
+        print i;
     }
 
-    str[] strings = [ "S1", "S2", "S3" ];
+    str[] strings = { "S1", "S2", "S3" };
     for str s in strings {
-        print(s);
+        print s;
     }
 
 
     // external files
 
     int pqr = 10;
-    print("Is " + pqr + " equal to 10? --> " + Utils.is_10(pqr));
+    print "Is " + pqr + " equal to 10? -> " + is_10 pqr;
 
 }
 
-bool is_42(int x, char? y = 'x') {
-    return x == 42 || (y && y == 'y');
+bool is_42 -> int x, char y = 'x' {
+    return x == 42 || y == 'y';
 }

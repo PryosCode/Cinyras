@@ -16,11 +16,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Dependencies
-      run: |
-        git clone https://github.com/microsoft/vcpkg.git
-        .\vcpkg\bootstrap-vcpkg.bat
-        .\vcpkg\vcpkg install curl
-        dir vcpkg\vcpkg\packages
+      uses: crazy-max/ghaction-chocolatey@v1
+      with:
+        args: install curl
     - name: Make
       run: |
         make

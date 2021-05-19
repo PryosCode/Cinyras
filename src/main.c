@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include "string.h"
-#include "curl.h"
+#include "web.h"
 #include "file.h"
 #include "cli.h"
 #include "lexer.h"

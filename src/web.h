@@ -1,11 +1,10 @@
-#ifndef CURL_H
-#define CURL_H
+#ifndef WEB_H
+#define WEB_H
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
-#include <curl/curl.h>
 
 extern bool verbose;
 

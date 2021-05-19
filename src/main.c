@@ -5,8 +5,16 @@
 #include "curl.h"
 #include "file.h"
 #include "cli.h"
+#include "lexer.h"
 
 bool verbose;
+
+void language(char *data) {
+    char *tokens = tokenize(data);
+    free(data);
+    printf("%s\n", tokens);
+    free(tokens);
+}
 
 int main(int argc, char *argv[]) {
     if (parse(argc, argv)) {
@@ -19,16 +27,14 @@ int main(int argc, char *argv[]) {
             if (strsta("http://", file) || strsta("https://", file)) {
                 char *data = read_page(file);
                 if (data) {
-                    printf("%s\n", data);
-                    free(data);
+                    language(data);
                 } else {
                     printf("An error occurred.\n");
                 }
             } else {
                 char *data = read_file(file);
                 if (data) {
-                    printf("%s\n", data);
-                    free(data);
+                    language(data);
                 } else {
                     printf("File not found.\n");
                 }

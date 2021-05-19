@@ -1,6 +1,9 @@
 #ifndef LEXER_H
 #define LEXER_H
 
-void tokenize();
+#include <stdlib.h>
+#include <string.h>
+
+char *tokenize(char *data);
 
 #endif

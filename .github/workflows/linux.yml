@@ -28,3 +28,15 @@ jobs:
           draft: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Login Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: pryoscode
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Push Docker Hub
+        uses: docker/build-push-action@v2
+        with:
+          push: false
+          tags: |
+            pryoscode/cinyras:latest
+            pryoscode/cinyras:${{ env.VERSION }}

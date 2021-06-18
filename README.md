@@ -1,4 +1,4 @@
-<a href="https://github.com/PryosCode/Cinyras"><img align="center" width="100%" alt="Cinyras" src="https://github.com/PryosCode/Cinyras/raw/master/img/logo.png"></a>
+<a href="https://github.com/PryosCode/Cinyras/blob/master/img/logo.txt"><img align="center" width="100%" alt="Cinyras" src="https://github.com/PryosCode/Cinyras/raw/master/img/logo.png"></a>
 
 <p align="center">
     <a href="https://github.com/PryosCode/Cinyras/wiki/Installation"><img alt="Version" src="https://img.shields.io/github/v/release/PryosCode/Cinyras?label=Version"></a>
